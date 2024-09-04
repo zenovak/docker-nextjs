@@ -1,0 +1,13 @@
+services:
+
+  # flask service
+  flask: 
+    container_name: flask
+    image: flask:1.0.0
+    build: 
+      context: ./backend
+      dockerfile: flask.dockerfile
+    ports:
+      - 4000:4000
+
+  
