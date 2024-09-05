@@ -5,7 +5,7 @@ const nextConfig = {
     return [
       {
         source: '/api/:path*',
-        destination: 'http://localhost:4000/:path*', // Proxy to python backend
+        destination: 'http://flask:4000/api/:path*', // Proxy to python backend. Must use service name from compose.yml
       },
     ]
   },

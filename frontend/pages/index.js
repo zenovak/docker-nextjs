@@ -21,7 +21,7 @@ export default function Home() {
     <main
       className={`flex min-h-screen flex-col items-center justify-between p-24 ${inter.className}`}
     >
-      <p> The message received from the python backend! {message && message}</p>
+      {message && <p> The message received from the python backend! {message}</p>}
       {!message && <p>
         Youre seeing this means the python backend is not running or some configurations failed  
       </p>}
