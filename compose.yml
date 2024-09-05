@@ -1,4 +1,13 @@
 services:
+  # nextjs frontend service
+  next:
+    container_name: next
+    image: next:1.0.0
+    build:
+      context: ./frontend
+      dockerfile: next.dockerfile
+    depends_on:
+      - flask
 
   # flask service
   flask: 
